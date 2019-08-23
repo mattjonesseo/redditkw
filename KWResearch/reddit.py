@@ -4,7 +4,7 @@ from datetime import datetime
 
 reddit = praw.Reddit(client_id='L35-VhD4_DcSCg', client_secret='Gv91Wq7gjPVZffa_9HEm-cL24dg', user_agent='keywordscraper')
 
-keyword = input('Enter Your Keyword: ')
+keyword = input('Enter Your Subreddit: ')
 
 hot_posts = reddit.subreddit(keyword).hot(limit=50)
 
